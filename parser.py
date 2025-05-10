@@ -1,7 +1,7 @@
-f = open('Artists.txt')
+f = open('SourceDataArtists.txt')
 content = f.read()
 f.close()
-with open('ArtistNames.txt', 'x') as output_f:
+with open('ParsedArtistNames.txt', 'x') as output_f:
     content = content.split('\n')
     for (i, line) in enumerate(content):
         if i == 0:
